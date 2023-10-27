@@ -1,0 +1,50 @@
+Objective: Build an ETL pipeline to extract data from a Google Cloud Storage (GCS) bucket, transform it using Google Dataflow, and load it into Google BigQuery.
+Steps:
+
+Step 1: Data Extraction
+
+  1. Data Source: Identify your data source. In this example, we'll use JSON files stored in a Google Cloud Storage (GCS) bucket as the source.
+
+  2.Google Cloud Storage Setup:
+  Create a GCS bucket if you haven't already.
+  Upload your JSON files to this GCS bucket.
+
+
+Step 2: Data Transformation
+
+  1. Google Dataflow Setup:
+     Create a Dataflow job to process the data. You can use the Dataflow SDK (Java or Python) to define your data transformation logic.
+
+  2. Define Data Transformations:
+     Within your Dataflow job, define the transformations you need (e.g., filtering, aggregation, schema changes).
+     Use Apache Beam transformations to perform these operations.
+
+Step 3: Data Loading
+
+  1. Target Destination: Decide where you want to load the transformed data. In this example, we'll use Google BigQuery as the target.
+  2. Google BigQuery Setup:
+     Create a BigQuery dataset or table where you want to load the data.
+     Define the schema for your BigQuery table based on the transformed data.
+  3. Write to BigQuery:
+     Modify your Dataflow job to write the transformed data to the BigQuery table you created.
+
+
+Commands:
+  Create Cloud Storage Bucket
+  -gsutil mb -c standard region -l   gs://$PROJECT
+
+  Copy files to your bucket
+
+  Create the BigQuery 'name' dataset
+  - bq mk name
+
+  Run the Dataflow transformation pipeline
+  -python dataflow_python_examples/data_transformation.py(file-name) \
+  --project=$PROJECT \
+  --region= \
+  --runner=DataflowRunner \
+  --machine_type=e2-standard-2 \
+  --staging_location=gs://$PROJECT/test \
+  --temp_location gs://$PROJECT/test \
+  --input gs://$PROJECT/data_files/head_usa_names.csv \
+  --save_main_session
