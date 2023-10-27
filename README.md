@@ -2,6 +2,7 @@
  ETLFlowGCP is a data integration and processing project designed for Google Cloud Platform (GCP). It streamlines the Extract, Transform, Load (ETL) process, enabling users to efficiently collect, transform, and store data on GCP.
 
 #Technology Stack:
+
 Google Cloud Platform (GCP): The project is hosted on and fully utilizes GCP's services for data storage, processing, and analytics.
 
 Cloud Storage: GCP Cloud Storage is employed to store both raw and processed data. Data extraction and transformation results are stored here.
