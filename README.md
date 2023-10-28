@@ -9,9 +9,15 @@ Cloud Storage: GCP Cloud Storage is employed to store both raw and processed dat
 ![image](https://github.com/Ankit01010/ETLFlowGCP/assets/97511749/60a1d290-0278-40ee-a912-fac0fe15abf4)
 
 
-BigQuery: Google BigQuery serves as the primary data warehousing and analytical platform for storing and querying processed data.
-
 Cloud Dataflow: Google Cloud Dataflow, powered by Apache Beam, is used for parallelized data processing. It executes data transformations at scale.
+![image](https://github.com/Ankit01010/ETLFlowGCP/assets/97511749/17fd6f84-ec6f-4fde-94e0-511fc1fc2e07)
+
+
+BigQuery: Google BigQuery serves as the primary data warehousing and analytical platform for storing and querying processed data.
+![image](https://github.com/Ankit01010/ETLFlowGCP/assets/97511749/cef98c11-1df8-47e7-b423-82a382d96c42)
+![image](https://github.com/Ankit01010/ETLFlowGCP/assets/97511749/1e34b783-6d33-4706-8d8f-c3df5a5a5f49)
+
+
 
 Python: Python is the primary programming language for implementing data transformation logic. Google Dataflow and Cloud Storage client libraries in Python are used for this purpose.
 
