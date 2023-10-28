@@ -6,6 +6,8 @@
 Google Cloud Platform (GCP): The project is hosted on and fully utilizes GCP's services for data storage, processing, and analytics.
 
 Cloud Storage: GCP Cloud Storage is employed to store both raw and processed data. Data extraction and transformation results are stored here.
+![image](https://github.com/Ankit01010/ETLFlowGCP/assets/97511749/60a1d290-0278-40ee-a912-fac0fe15abf4)
+
 
 BigQuery: Google BigQuery serves as the primary data warehousing and analytical platform for storing and querying processed data.
 
